@@ -1,0 +1,23 @@
+<div class="heading">
+    <h3>
+        TOP HEADLINES
+        <small class="text-muted">of the day</small>
+      </h3>
+    
+</div>
+<div>
+    <div class="row" style="margin:10px ;">
+        <div *ngFor="let h of topheadingDisplay" class="col-xl-3" >
+           <div class="box">
+            <h5>
+                <img src="{{h.urlToImage}}" width="100%">
+                {{h.title}}
+               
+                <a class="btn btn-dark btn-sm mt-2" (click)="OnGoToNewsSinglePage(h)" >Read More</a>           
+            </h5>
+
+
+           </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="heading">
+    <h1>Business News</h1>
+</div>
+<div>
+    <div class="row" style="margin:10px ;">
+        <div *ngFor="let b of businessnewsDisplay" class="col-xl-3 ">
+           <div class="box">
+            <h5>
+                <img src="{{b.urlToImage}}" width="100%">
+                {{b.title}}
+
+               
+                <a  class="btn btn-dark btn-sm mt-2" (click)="OnGoToNewsSinglePage(b)">Read More</a>           
+             
+            </h5>
+
+
+           </div>
+        </div>
+    </div>
+</div>

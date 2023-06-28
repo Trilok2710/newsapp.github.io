@@ -1,0 +1,22 @@
+<div class="heading">
+    <h3>
+        Tech news
+        </h3>
+    
+</div>
+<div>
+    <div class="row" style="margin:10px ;">
+        <div *ngFor="let t of technewsDisplay" class="col-xl-3 ">
+           <div class="box">
+            <h5>
+                <img src="{{t.urlToImage}}" width="100%">
+                {{t.title}}
+               
+                <a class="btn btn-dark btn-sm mt-2"(click)="OnGoToNewsSinglePage(t)" >Read More</a>           
+            </h5>
+
+
+           </div>
+        </div>
+    </div>
+</div>
